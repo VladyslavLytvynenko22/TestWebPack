@@ -23,7 +23,7 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           { loader: 'style-loader' },
-          { loader: 'css-loader', 
+          { loader: 'css-loader',
             options: {
               importLoaders: 1,
               modules: {
@@ -40,14 +40,14 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpeg?g|gif)$/,
-        loader: 'url-loader?limit=8000&nameimages/[name].[ext]'
+        test: /\.(png|jpe?g|gif)$/,
+        loader: 'url-loader?limit=8000&name=images/[name].[ext]'
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: __dirname + 'src/index.html',
+      template: __dirname + '/src/index.html',
       filename: 'index.html',
       inject: 'body'
     })
