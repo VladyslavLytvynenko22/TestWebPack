@@ -1,11 +1,12 @@
 {
-  "name": "testwebpack",
+  "name": "react-complete-guide",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "build:prod": "webpack --config webpack.config.prod.js"
   },
   "author": "",
   "license": "ISC",
